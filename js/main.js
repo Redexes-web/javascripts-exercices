@@ -15,6 +15,7 @@ let nombre1 = parseInt(prompt("veuillez entrer votre premier nombre :")),
     nombre2 = parseInt(prompt("veuillez entrer votre second nombre :"));
 alert("La somme de vos nombre est: " + somme(nombre1,nombre2));
 
+
 // exercice 3
 
 let age = parseInt(prompt("Entrez votre age: "));
