@@ -8,10 +8,8 @@ nombre1 = parseInt(prompt("veuillez entrer votre premier nombre :"));
 nombre2 = parseInt(prompt("veuillez entrer votre second nombre :"));
 alert("La somme de vos nombre est: " + (nombre1+nombre2));
 age = parseInt(prompt("Entrez votre age: "));
-console.log(typeof age)
-console.log(age)
 
-while (isNaN(age)) {
+while (isNaN(age) || age > 123) {
     age = parseInt(prompt("Veuillez renseigner un age en chiffre :"));
 }
 majeur = age>=18 ? true : false ;
