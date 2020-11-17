@@ -4,6 +4,7 @@ alert("bonjour tout le monde");
 let prenom = prompt("quel est votre prénom ?");
 alert("bonjour " + prenom);
 
+//=====================================================================================
 
 // exercice 2
 
@@ -15,6 +16,7 @@ let nombre1 = parseInt(prompt("veuillez entrer votre premier nombre :")),
     nombre2 = parseInt(prompt("veuillez entrer votre second nombre :"));
 alert("La somme de vos nombre est: " + somme(nombre1,nombre2));
 
+//========================================================================================
 
 // exercice 3
 
@@ -33,35 +35,38 @@ else{
     alert("vous êtes mineur")
 }
 
+//========================================================================================
 
 // exercice 4
 //fait avec une boucle for dans une boucle while
 
 function isPrime(num) {
     for(let i = 2; i < num; i++)
-      if(num % i === 0) return false;
+    if(num % i === 0) return false;
     return num > 1;
-  }
+}
 
-  document.write("<br> <h2>nombres premiers:</h2>  <br> <p>")
-  let primeNumbers = [], i=1;
-  do{
+document.write("<br> <h2>nombres premiers:</h2>  <br> <p>")
+let primeNumbers = [], i=1;
+do{
     if(isPrime(i)){
         primeNumbers.push(i);
         document.write(i + ", ")
     }
     i++;
-  }
-  while (i<100)
+}
+while (i<100)
 document.write("</p>")
-  
+
+//========================================================================================
+
 //exercice 4 V2
 //fait avec une boucle while dans une boucle for
 
 function isPrime2(num){
     let primes = [];
     if (num < 3){
-         return true;
+        return true;
     } 
     else{
         var a = num - 1;
@@ -83,8 +88,9 @@ for (let i = 2; i < 100; i++) {
 }
 document.write("</p>")
 
+//========================================================================================
 
-  //exercice 5
+//exercice 5
 
 document.write("<h2> Table de multiplication</h2><table class=\"table\">")
 //boucle for pour la premiere ligne du tableau
@@ -113,6 +119,7 @@ for (let i = 1; i <= 10; i++) {
 //on ferme le tableau
 document.write("</table>")
 
+//========================================================================================
 
 //exercice 6
 
