@@ -35,12 +35,14 @@ else{
 
 
 // exercice 4
+//fait avec une boucle for dans une boucle while
 
 function isPrime(num) {
-    for(var i = 2; i < num; i++)
+    for(let i = 2; i < num; i++)
       if(num % i === 0) return false;
     return num > 1;
   }
+
   document.write("<br> <h2>nombres premiers:</h2>  <br> <p>")
   let primeNumbers = [], i=1;
   do{
@@ -53,13 +55,42 @@ function isPrime(num) {
   while (i<100)
 document.write("</p>")
   
+//exercice 4 V2
+//fait avec une boucle while dans une boucle for
+
+function isPrime2(num){
+    let primes = [];
+    if (num < 3){
+         return true;
+    } 
+    else{
+        var a = num - 1;
+        while (num%a !== 0){
+            var a = a-1; 
+            if (a === 1){
+                return true; 
+            } 
+        }
+        return false 
+    } 
+}
+
+document.write("<br> <h2>nombres premiers V2:</h2>  <br> <p>")
+for (let i = 2; i < 100; i++) {
+    if (isPrime2(i) === true) {
+        document.write(i + ", ")
+    }
+}
+document.write("</p>")
+
+
   //exercice 5
+
 document.write("<h2> Table de multiplication</h2><table class=\"table\">")
 for (let i = 1; i <= 10; i++) {
     document.write("<tr>")
     for (let z = 1; z <= 10; z++) {
         document.write("<td>" + z*i + "</td>")
-        
     }
     document.write("</tr>")
     
@@ -76,3 +107,5 @@ btn.onclick = function() {
     else
     document.body.style.background = "darkgray";
     }; 
+
+
