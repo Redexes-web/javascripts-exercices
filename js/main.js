@@ -87,6 +87,7 @@ document.write("</p>")
   //exercice 5
 
 document.write("<h2> Table de multiplication</h2><table class=\"table\">")
+//boucle for pour la premiere ligne du tableau
 for (let index = 0; index <= 10; index++) {
     if (index == 0) {
         document.write("<th>x</th>")
@@ -94,16 +95,22 @@ for (let index = 0; index <= 10; index++) {
     else
     document.write("<th>" + index + "</th>")
 }
+//boucle for pour creer 10 lignes
 for (let i = 1; i <= 10; i++) {
+    //on cree le debut de ligne
     document.write("<tr>")
+    //on ecrit l'index de la table de multiplication en debut de ligne
     document.write("<th>" + i + "</th>")
+    //on boucle 10 fois pour avoir 10 td dans ma ligne
     for (let z = 1; z <= 10; z++) {
-        
+        //on ecrit la td
         document.write("<td>" + z*i + "</td>")
     }
+    //on ferme la ligne
     document.write("</tr>")
     
 }
+//on ferme le tableau
 document.write("</table>")
 
 
