@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Exercices Javascript 2</title>
+</head>
+<body>
+    <h1>Exercies Javascript 2</h1>
+    <div class="container">
+        <form action="" class="text-center">
+            <fieldset class="border p-2">
+                <legend class="w-auto">Changer la couleur du background</legend>
+                <label class="w-100" for="">Rouge</label>
+                <output class="btn btn-danger">255</output>
+                <input id="red" class="form-control-range" type="range" min="0" max="255" value="255">
+                <label class="w-100" for="">Vert</label>
+                <output class="btn btn-success">255</output>
+                <input id="green" class="form-control-range" type="range" min="0" max="255" value="255">
+                <label class="w-100" for="">Bleu</label>
+                <output class="btn btn-primary">255</output>
+                <input id="blue" class="form-control-range" type="range" min="0" max="255" value="255">
+            </fieldset>
+
+            <fieldset class="border p-2">
+                <legend class="w-auto">S'amuser avec l'image</legend>
+                <label for="" class="w-100">Margin</label>
+            <output class="btn btn-secondary">0</output><span class="m-2">px</span>
+            <input id="margin" class="form-control-range" type="range" min="10" max="500" oninput="changeStyle('margin', this)">
+            <label for="" class="w-100">height</label>
+            <output class="btn btn-secondary">auto</output><span class="m-2">vh</span>
+            <input id="height" class="form-control-range" type="range" min="10" max="100"  oninput="changeStyle('height', this.value)">
+            <label for="" class="w-100">width</label>
+            <output class="btn btn-secondary">auto</output><span class="m-2">%</span>
+            <input id="width" class="form-control-range" type="range" min="10" max="100" oninput="changeStyle('width', this.value)">
+            <label for="" class="w-100">arondi</label>
+            <output class="btn btn-secondary">0</output><span class="m-2">px</span>
+            <input id="radius" class="form-control-range" type="range" min="0" max="550" value="0" oninput="changeStyle('radius', this.value)">
+            <label for="" class="w-100">rotation</label>
+            <output class="btn btn-secondary">0</output><span class="m-2">degrés</span>
+            <input id="rotate" class="form-control-range" type="range" min="0" max="360" value="0" oninput="changeStyle('rotate', this.value)">
+            </fieldset>
+        </form>
+    </div>
+    <img id="myImage" src="https://via.placeholder.com/500/F5F5F5/FF0000/?text=Javascript 2" alt="">
+
+    <br>
+    <br><br><br><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem nesciunt, voluptatibus sapiente ad iure sed nisi impedit. Optio tempora provident accusamus eos nemo a facilis ratione unde eum? Nam labore dignissimos corrupti facilis assumenda possimus alias dolor cum ea corporis autem, voluptatem omnis nulla consectetur cumque culpa voluptatibus esse ex accusamus reprehenderit. Quasi obcaecati modi delectus maxime blanditiis earum, animi ipsam distinctio exercitationem in, magnam repudiandae? Cupiditate nesciunt quidem sed!</p>
+    <a href="javascript:void(0)" class="btn btn-primary" id="superBtn">Super Boutton!</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+          <span class="time" id="time">00:00:00</span>
+        <div class="controls">
+          <button class="buttonPlay">
+            <img id="playButton" src="images/play.png" />
+            <img id="pauseButton" src="images/pause.png" />
+          </button>
+  
+          <button class="buttonReset">
+            <img id="resetButton" src="images/reset.png" />
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <form action="" class="text-center">
+            <fieldset class="border p-2">
+                <legend class="w-auto">Verifier si il y a une majuscule en debut de ligne entre A,B,C ou D</legend>
+                <label for="">entrez votre texte</label>
+                <input type="text" name="" id="regexD">
+                <h4 id="regexResult1"></h4>
+              </fieldset>
+            <fieldset class="border p-2">
+                <legend class="w-auto">Verifier si il y a un "@"</legend>
+                <label for="">entrez votre texte</label>
+                <input type="text" name="" id="regexAt">
+                <h4 id="regexResult2"></h4>
+              </fieldset>
+            <fieldset class="border p-2">
+                <legend class="w-auto">Verifier si il y a au moins un chiffre</legend>
+                <label for="">entrez votre texte</label>
+                <input type="text" name="" id="regexNum">
+                <h4 id="regexResult3"></h4>
+              </fieldset>
+          </form>
+      </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
