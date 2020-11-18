@@ -160,6 +160,10 @@ function chooseWinner() {
     alert(`le gagnant est ${names[random]}`);
 }
 
+
+
+//=======WIP=======WIP========WIP=======WIP========WIP=====WIP=======WIP========WIP=======WIP========WIP=======WIP========$
+
 function getMultiplication(table) {
 
     result = document.getElementById('multiplicationResult')
