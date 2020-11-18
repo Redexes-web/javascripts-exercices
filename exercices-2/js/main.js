@@ -143,3 +143,44 @@ checkD.addEventListener('input', function() {RegexTester(checkD.value, dRegex, r
 checkAt.addEventListener('input', function() {RegexTester(checkAt.value, mailRegex, result2);}, false)
 checkNum.addEventListener('input', function() {RegexTester(checkNum.value, numberRegex, result3);}, false)
 checkNum.addEventListener('input', function() {changeNumber(num, "*", checkNum);}, false)
+
+let names = []
+function setName() {
+    let name = prompt("Entre un Nom : ")
+    names.push(name);
+}
+let addName = document.getElementById("addName");
+let getWinner = document.getElementById("getWinner");
+
+addName.addEventListener("click", setName, false)
+getWinner.addEventListener("click",chooseWinner, false)
+function chooseWinner() {
+    if (names.length === 0) setName();
+    let random = Math.floor(Math.random() * names.length);
+    alert(`le gagnant est ${names[random]}`);
+}
+
+function getMultiplication(table) {
+
+    result = document.getElementById('multiplicationResult')
+    table = parseInt(table);
+
+    if (isNaN(table)) {
+        result.innerHTML = "Veuillez entrer un entier"
+    } else {
+        result.innerHTML = "";
+        var newDiv = document.createElement("div");
+        newDiv.classList.add("results")
+        for (let i = 0; i < 10; i++) {
+            
+            res = `${i} x ${table} = ${i*table}`
+            var newElem = document.createElement("p");
+            newElem.classList.add("result");
+            newElem.innerHTML = res
+            newDiv.appendChild(newElem);
+            
+        }
+        console.log(newDiv)
+        document.body.insertBefore(newDiv, result);
+    }
+}
