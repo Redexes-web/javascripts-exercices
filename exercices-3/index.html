@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercices Javascript Partie 3</h1>
+    <form action="" class="text-center">
+        <fieldset class="border p-2">
+            <legend class="w-auto">1) Inverse l'ordre de la chaine de caractères</legend>
+            <input type="text" name="palin" id="inverse" oninput="inverseString(this.value)">
+            <h4 id="inverseResult"></h4>
+        </fieldset>
+        <fieldset class="border p-2">
+            <legend class="w-auto">2) Verifier si la chaine de caratères est un palindrôme</legend>
+            <input type="text" name="palin" id="palin" oninput="isPalindrome(this.value)">
+            <h4 id="palinResult"></h4>
+        </fieldset>
+        <fieldset class="border p-2" id="generate">
+            <legend class="w-auto">3) Generer toutes les combinaisons</legend>
+            <input type="text" name="ucfl" oninput="generateAllCombinaisons(this.value)">
+            <ol id="allCombinaisons" class="list-group text-center"></ol>
+        </fieldset>
+        <fieldset class="border p-2">
+            <legend class="w-auto">4) trier par ordre alphabetique</legend>
+            <input type="text" name="palin" id="sort" oninput="sortByAlphabet(this.value)">
+            <h4 id="sortResult"></h4>
+        </fieldset>
+        <fieldset class="border p-2">
+            <legend class="w-auto">5) Convertir la chaine de caratères en mettant la première lettre de chaque mot en majuscule</legend>
+            <input type="text" name="ucfl" id="ucfl" oninput="toUpperCaseFirstLetter(this.value)">
+            <h4 id="ucflResult"></h4>
+        </fieldset>
+        <fieldset class="border p-2">
+            <legend class="w-auto">6) Trouver le mot le plus long d'une phrase</legend>
+            <input type="text" name="ucfl" id="ucfl" oninput="findLongestWord(this.value)">
+            <h4 id="longestResult"></h4>
+        </fieldset>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>

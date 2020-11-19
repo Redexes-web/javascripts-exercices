@@ -162,29 +162,24 @@ function chooseWinner() {
 
 
 
-//=======WIP=======WIP========WIP=======WIP========WIP=====WIP=======WIP========WIP=======WIP========WIP=======WIP========$
-
 function getMultiplication(table) {
 
     result = document.getElementById('multiplicationResult')
     table = parseInt(table);
-
+    
     if (isNaN(table)) {
         result.innerHTML = "Veuillez entrer un entier"
     } else {
         result.innerHTML = "";
-        var newDiv = document.createElement("div");
-        newDiv.classList.add("results")
         for (let i = 0; i < 10; i++) {
             
             res = `${i} x ${table} = ${i*table}`
             var newElem = document.createElement("p");
             newElem.classList.add("result");
             newElem.innerHTML = res
-            newDiv.appendChild(newElem);
+            result.appendChild(newElem);
             
         }
-        console.log(newDiv)
-        document.body.insertBefore(newDiv, result);
+        document.body.insertBefore(result, null);
     }
 }
