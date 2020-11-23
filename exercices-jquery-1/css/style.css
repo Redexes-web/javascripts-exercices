@@ -1,0 +1,31 @@
+body{
+    padding: 50px;
+}
+div{
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.orange{
+    background-color: orange;
+}
+.color-f{
+    color: #ffffff;
+}
+.bg-color-0{
+    background-color: #000000;
+}
+small{
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    margin: 40px;
+    padding: 20px;
+    font-size: 16px;
+}
+h2{
+    margin-top: 90px;
+}
+.btn{
+    margin: 1em;
+}

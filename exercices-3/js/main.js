@@ -89,3 +89,8 @@ function findLongestWord(str)
     result = document.getElementById('longestResult');
     result.innerHTML = longest;
 }
+
+let test = document.getElementById("test");
+let test2 = $("#test");
+console.log({test});
+console.log({test2});
