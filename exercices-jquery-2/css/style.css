@@ -1,0 +1,41 @@
+body>div{
+    margin: 50px;
+}
+small{
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    margin: 40px;
+    padding: 20px;
+    font-size: 16px;
+}
+h2{
+    margin-top: 90px;
+}
+.btn{
+    margin: 1em;
+}
+div div{
+    background-color: mediumblue;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+}
+#d-1{
+    background-color: orange;
+}
+
+#d-2a{
+    background-color: red;
+}
+#d-2b{
+    background-color: green;
+}
+#d-2c{
+    background-color: blue;
+}
+
+.green{
+    background-color: green!important;
+}
